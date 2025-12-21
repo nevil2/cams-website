@@ -3,7 +3,7 @@
 	import Markdown from '$lib/Markdown.svelte'
 	import home from '$lib/content/home.md?raw'
 	import contribute from '$lib/content/contribute.md?raw'
-	import about from '$lib/content/about.md?raw'
+	import people from '$lib/content/people.md?raw'
 	import tech from '$lib/content/tech.md?raw'
 	import deploy from '$lib/content/deploy.md?raw'
 	import clubs from '$lib/content/clubwebsites.md?raw'
@@ -13,12 +13,14 @@
 	import reporting from '$lib/content/routereporting.md?raw'
 	import topoeditor from '$lib/content/topoeditor.md?raw'
 	import learnsvelte from '$lib/content/svelte.md?raw'
+	import bespoke from '$lib/content/bespoke.md?raw'
+	import development from '$lib/content/development.md?raw'
 
 	let content = $derived(
 		{
 			home,
 			contribute,
-			about,
+			people,
 			tech,
 			deploy,
 			clubs,
@@ -27,11 +29,13 @@
 			himalayan_index,
 			reporting,
 			topoeditor,
-			learnsvelte
-		}[page.params.slug]
+			learnsvelte,
+			bespoke,
+			development
+		}[page.params.slug || '']
 	)
 </script>
 
-<div class="prose prose-a:no-underline m-2 max-w-none px-8">
+<div class="prose prose-a:no-underline max-w-none px-4 sm:px-8">
 	<Markdown {content} />
 </div>

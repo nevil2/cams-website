@@ -4,8 +4,7 @@
 
 The TopoEditor is: 
 - possibly the world's most advanced tool dedicated to creating climbing topos.
-- built with [![alt h](vue-logo.svg) VueJS](https://vuejs.org/).
-- integrated into the Digital Guide applications.
+- integrated into the Routes Database applications and New route submission processes
 - available as a [free online tool](https://topoeditor.com) for anyone to use.
 
 

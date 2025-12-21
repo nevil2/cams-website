@@ -1,17 +1,19 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte'
 	import '../app.css'
+	// import '../index.css'
 	import Navbar from './NavBar.svelte'
 
-	let { children } = $props()
+	let { children }: { children: Snippet } = $props()
 </script>
 
 <a href="#main" class="sr-only">Skip to main content</a>
-<div class="flex h-screen w-screen flex-col justify-between bg-gray-50">
+<div class="flex h-screen w-full flex-col justify-between bg-gray-50">
 	<header>
 		<Navbar />
 	</header>
-	<div class={`overflow-scroll-y mt-10 mb-auto flex md:mt-10 `}>
-		<main id="main">
+	<div class={`overflow-scroll-y mt-10 mb-auto flex w-full justify-center md:mt-10 `}>
+		<main id="main" class="container mx-auto w-full max-w-5xl">
 			{@render children()}
 		</main>
 	</div>

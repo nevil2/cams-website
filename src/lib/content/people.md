@@ -1,6 +1,6 @@
 <base target="_blank">
 
-# The Core Team
+# People
 
 ### Nevil Hewitt
 

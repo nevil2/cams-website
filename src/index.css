@@ -1,0 +1,140 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-mauve: #5375e5;
+  --color-offwhite: #f9fafb;
+}
+
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #535bf2;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+}
+
+@layer components {
+  .card {
+    padding: 2em;
+  }
+
+  img[alt$="R"] {
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    width:25%;
+  }
+
+  img[alt$="N"] {
+    float: right;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    width:50%;
+  }
+
+  img[alt$="L"] {
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 8px;
+    width:25%;
+  }
+
+  img[alt$="><"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    float: none!important;
+  }
+
+  img[alt$="LL"] {
+    display: block;
+    width: 24px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 8px;
+  }
+
+  img[alt$="h"] {
+    display: inline-block !important;
+    height: 16px !important;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    margin-right: 2px;
+  }
+
+  img[alt$="l"] {
+    display: inline-block !important;
+    height: 40px !important;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    margin-right: 2px;
+  }
+}
+

@@ -1,5 +1,96 @@
 <base target="_blank">
 
+<h1 style="text-align: center; margin-top: 16px;">Club Website</h1>
+
+<div class="flex gap-8 items-center justify-center flex-wrap sm:flex-nowrap">
+  <a href="https://smc.org.uk">
+    <img src="SMC_Horiz_BLK.svg" width="200" />
+  </a>
+  <a href="https://climbers-club.co.uk">
+    <img src="CC_logo_header.svg" width="400" />
+  </a>
+  <a href="https://alpineclub.org">
+    <img src="AC_logo_colour.svg" width="140" />
+  </a>
+  <a href="https://pinnacleclub.co.uk">
+    <img src="PC_logo.svg" width="200" />
+  </a>
+  <a href="https://new.frcc.co.uk">
+    <img src="FRCC_logo.svg" width="80" />
+  </a>
+</div>
+
+<div class="flex">
+<div class="w-1/2 pr-4">
+
+## Multi Purpose
+
+The Club website simulteanously achieve multiple objectives for the clubs to:
+
+1. Present themselves publicly
+2. Provide to, and collect from, the public with information on their climbing areas
+3. Sell their publications or other shop items
+4. Enable their members to 'self serve'
+5. Recruit new members
+6. Manage their huts
+7.  Administer the club
+
+</div>
+<div class="w-1/2">
+
+[![image](SMCwebsitehome.jpg)](https://smc.org.uk)
+</div>
+</div>
+
+<div class="flex">
+<div class="w-1/2">
+
+[![image](Pinnacle_Club.jpg)](https://pinnacleclub.co.uk)
+</div>
+<div class="w-1/2 pl-4">
+
+## Custom Design & Functionality
+
+Whilst each club webiste is built on common principles and reuseable bits of code, each club website has its own code base which belongs to that club.
+
+This enables the graphic design of the website to be tailored to the requirements of that club and its branding.  The original design is typically done by a designer chosen by the club.
+
+Whilst clubs have common requirements in terms of functionality, each club has slightly different requirements as the what they need, and how the processes should work.  As such, all functionality is adapted to the specific needs of the club.
+</div>
+</div>
+
+<div class="flex">
+<div class="w-1/2 pr-4">
+
+## Strapi CMS
+
+The Strapi CMS enables:
+
+- different authorisation rules to apply to members and different club officials 
+- non-technical club officials create and update website content, including new pages
+- administrators to do most tasks through the front-end website
+- developers and administrations to access underlying records (e.g. hut bookings)
+- management of payments through Stripe and GoCardless
+- confirmation and infomation emails to be sent 
+
+As such, it is acting as both a CMS and an administration system
+
+</div>
+<div class="w-1/2">
+
+[![image](cc_website.png)](https://climbers-club.co.uk)
+</div>
+</div>
+
+<div class="flex">
+<div class="w-1/2">
+
+[![image](ac_website.png)](https://alpineclub.org)
+</div>
+<div class="w-1/2 pl-4">
+
+## Functionality
+
 | Functionality    | SMC | PC | CC | AC | FRCC |
 | --------------- | --- | -- | -- | -- | ---- |
 | Contact forms   | ✓   | ✓ | ✓  | ✓  | ✓   |
@@ -19,22 +110,13 @@
 | GoCardless direct debits |    | ✓ | ✓  | ✓  |    |
 | Interbacs direct debits |    |   |    |    |  ✓  |
  
+</div>
+</div>
 
+<div class="flex">
+<div class="w-1/2 pr-4">
 
-[![image alt N](SMCwebsitehome.jpg)](https://smc.org.uk)
-[![image alt N](Pinnacle_Club.jpg)](https://pinnacleclub.co.uk)
-
-Websites are being built for individual clubs with [![alt h](svelte-logo.svg)](https://svelte.dev/) **Svelte** / [![alt h](svelte-kit-logo.svg)](https://kit.svelte.dev/)
-using [![alt h](strapi-logo.svg)](https://strapi.io/) CMS (content management system).
-
-These websites can include systems for:
- - club membership
- - hut booking
- - meets management
- - guidebook shop
- - forums
-
-Along with custom functionality such as New Routes, Munro Compleator & Himalayan Index.
+## Philosophy
 
 Each Club owns its own site and code base whilst potentially benefiting from a common approach:
  - Common solutions
@@ -51,35 +133,10 @@ Our approach aims to provide:
  - Faster and more responsive website
  - Lower Maintenance
 
-<hr>
+</div>
+<div class="w-1/2">
 
-### Strapi CMS
-
-[![alt h](strapi-logo.svg)](https://strapi.io/) is the leading open-source, NodeJS, headless Content Management System (CMS): 
-
- -	Software package with an admin panel for adding, updating and deleting content
- -	Allows different users of admin panel to have different rights
- -	Provide API endpoints for front-end applications to collect content
- -  Allows authenticated member login
- -	Control access of different users (public, club member, specific club officers) to content
- -	Allows customisation of the API where necessary
- -	Can be configured to work with different databases / image stores
- -	Free for self-hosting.  (There is some modest hosting costs).
-
-
-### Custom Servers
-
-The websites can interact direct with other Club servers for New Routes, Munros, Himalayan Index, etc, enabling additional functionality to be integrated inot the website.
-
-
-### Server-side Pre-rendering & Client-side On-demand Rendering
-
-SvelteKit enables:
-- Cloudflare to prerender the main pages at build time, enabling fast and efficient loading
-- The user's browser to collect and render 'occasional' public content direct from Strapi
-- Member only content to be collected from and rendered by the browser direct from Strapi only after the member has logged in
-
-
-Other pages describe the [technology](/tech) used and method of [deployment](/deploy).
-
+[![image](frcc_website.png)](https://new.frcc.co.uk)
+</div>
+</div>
 

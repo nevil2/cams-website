@@ -54,7 +54,7 @@ a:hover {
 
 nav a {
   color: var(--color-camsneutral);
-  margin-right: 16px
+  margin-right: 0px;
 }
 
 nav a:hover {
@@ -163,6 +163,14 @@ img[alt$="R"] {
 
 img[alt$="N"] {
   float: right;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 8px;
+  width:50%;
+}
+
+img[alt$="LN"] {
+  float: left;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 8px;

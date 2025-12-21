@@ -1,21 +1,31 @@
 <script lang="ts">
-	let navbarOpen = false
+	let navbarOpen = $state(false)
 	const toggleNavbarOpen = () => {
 		navbarOpen = !navbarOpen
 	}
 </script>
 
-<nav class="bg-camsblue text-camsneutral fixed top-0 z-50 flex min-h-10 w-screen">
-	<div class="container mx-auto flex max-w-screen-lg items-center justify-between px-8">
-		<div class="relative flex w-full justify-between sm:static sm:block sm:w-auto sm:justify-start">
-			<a class="flex items-center" href="/">
-				<span class="mr-6 hidden text-lg hover:text-white md:flex">Home</span>
-				<span class="flex text-lg hover:text-white md:hidden">Home</span>
-			</a>
+{#snippet links()}
+	<a class="text-gray-200 hover:text-white" href="/guides">Routes Database</a>
+	<!-- <a class="text-gray-200 hover:text-white" href="/reporting">Route Reporting</a> -->
+	<!-- <a class="text-gray-200 hover:text-white" href="/topoeditor">TopoEditor</a> -->
+	<a class="text-gray-200 hover:text-white" href="/clubs">Club Websites</a>
+	<!-- <a class="text-gray-200 hover:text-white" href="/huts">Hut Booking</a> -->
+	<a class="text-gray-200 hover:text-white" href="/bespoke">Bespoke</a>
+	<!-- <a class="text-gray-200 hover:text-white" href="/about">About</a> -->
+	<a class="text-gray-200 hover:text-white" href="/development">Development</a>
+	<a class="text-gray-200 hover:text-white" href="/tech">Technology</a>
+	<a class="text-gray-200 hover:text-white" href="/deploy">Deployment</a>
+{/snippet}
+
+<nav class="bg-camsblue fixed top-0 z-50 w-full py-1 text-gray-50">
+	<div class="container mx-auto max-w-5xl px-4 sm:px-8">
+		<div class="flex items-center justify-between">
+			<a class="flex items-center text-lg text-gray-200 hover:text-white" href="/">Home</a>
 			<button
 				type="button"
-				class="mt-5 ml-3 inline-flex h-10 items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 focus:outline-none sm:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-				on:click={toggleNavbarOpen}
+				class="inline-flex h-10 items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 focus:outline-none sm:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+				onclick={toggleNavbarOpen}
 			>
 				<span class="sr-only">Open main menu</span>
 				<svg
@@ -32,30 +42,16 @@
 					/>
 				</svg>
 			</button>
-		</div>
-		<div
-			class={'flex-grow items-center sm:flex' + (navbarOpen ? ' flex' : ' hidden')}
-			id="navbar-default"
-		>
-			<div class="flex flex-col sm:ml-auto sm:flex-row">
-				<a href="/guides">Digital Guide</a>
-				<a href="/reporting">Route Reporting</a>
-				<a href="/topoeditor">TopoEditor</a>
-				<a href="/clubs">Club Websites</a>
-				<!-- <a href="/huts">Hut Booking</a> -->
-				<!-- <a href="/himalayan_index">Himalayan Index</a> -->
-				<a href="/about">About</a>
-				<a href="/contribute">Contribute</a>
-				<a href="/tech">Technology</a>
-				<a href="/deploy">Deployment</a>
+			<div class="hidden sm:ml-auto sm:flex">
+				<div class="flex flex-row gap-6">
+					{@render links()}
+				</div>
 			</div>
 		</div>
+		{#if navbarOpen}
+			<div class="mt-2 flex flex-col space-y-2 sm:hidden">
+				{@render links()}
+			</div>
+		{/if}
 	</div>
 </nav>
-
-<style>
-	.navbar {
-		background-color: #5375e5;
-		color: #e3e6f2;
-	}
-</style>

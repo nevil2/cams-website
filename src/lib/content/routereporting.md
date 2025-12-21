@@ -1,6 +1,6 @@
 <base target="_blank">
 
-![image alt N](NewRoutesSubmissionSite.jpg)
+![image alt N](cc_submission.png)
 
 ## New Route Reporting
 

@@ -1,46 +1,53 @@
 # Deployment
 
-## GIT Repositories
+## [![alt l](github-mark.svg) GitHub](https://github.com/)
 
-All code is stored in Git repositiories either on [![alt h](github-mark.svg) GitHub](https://github.com/) 
-or [![alt h](gitlab-logo.svg) GitLab](https://gitlab.com). When new code is pushed to production or development branch:
-- Sveltekit applications are automatically deployed
-- Strapi and Hono appications are built into [![alt b](docker-vector-logo.svg)](https://hub.docker.com/) containers and pushed to the revelant Container registry using GitHub Actions or GitLab CI/CD, from where they are typically automatically deployed.  
+All code is stored in Git repositiories in club specifc accounts. Code pushed to GitHub triggers either:
+- Cloudflare to deploy the commit, or
+- GitHub Actions to build the commit into a [![alt b](docker-vector-logo.svg)](https://hub.docker.com/) container and push it to the revelant Container registry.
 
-## Svelte / Sveltekit
+GitHub actions are also used for:
+- backup of Cloudflare D1 databases
+- webhook triggered from Strapi to rebuild and deploy a club website
 
-[![alt l](cloudflare-logo.svg)](https://www.cloudflare.com/en-gb/) Pages or Workers is used to automatically deploy the majority of applications
+## [![alt l](cloudflare-logo.svg)](https://www.cloudflare.com/en-gb/)
 
-Few applications are still on [![alt bb](/netlify-logo.svg)](https://www.netlify.com/).
+Each club has its own Cloudflare account which is used for:
+1. Domain registration and management, DNS and domain specific rules
+2. Cloudflare Workers which in turn can use KV storage, D1 database, R2 object storage, Observability logs and Analytics Engine
+3. Cloudflare Turnstile as CAPTCHA replacement
 
-## Strapi and Bespoke servers
-
-[![alt b](digital-ocean-logo.svg)](https://www.digitalocean.com/) app platform is used to automatically deploy [![alt h](strapi-logo.svg)](https://strapi.io/) the application from its container registry, supported by its **PostgreSQL Managed Database Service** and **S3 storage**.
-
-
-## Hono (Routes database)
-
-[![alt b](digital-ocean-logo.svg) droplets](https://www.digitalocean.com/) (Linux-based virtual machines) are currently used for deployment. This allows use of local SQLite database, but involves work to set up, update, maintain, monitor and, in the rare event of a crash, require manual restart.  The techonolgies which need configuring include:
-
-<p class="flex">
-  <img class="mr-4" src="/ubuntu.svg" width="100" />
-  <img class="mr-4" src="/docker-vector-logo.svg" width="100" /> 
-  <img class="mr-4" src="/NGINX-logo.svg" width="100" />
-  <img class="mr-4" src="/certbot-logo.svg" width="100" />
-  <img class="mr-4" src="/ssh-com-logo.svg" width="100" />
-</p>
+All Sveltekit applications and the bespoke Hono servers are deployed on Cloudflare.
 
 
-### S3 Standard Storage
+## [![alt l](digital-ocean-logo.svg)](https://www.digitalocean.com/)
 
-[![alt b](digital-ocean-logo.svg) Spaces](https://www.digitalocean.com/) is used to provide the  [S3 storage](https://en.wikipedia.org/wiki/Amazon_S3) needed 
+1. **App platform** is used to automatically deploy [![alt h](strapi-logo.svg)](https://strapi.io/) the application from its container registry, supported by its **PostgreSQL Managed Database Service** and **S3 storage**.
+2. **Droplets** (Linux-based virtual machines) are currently used the routes database servers, as they have persistent storage which  allows use of local SQLite database.  VM require more work the managed platforms to set up, update, maintain, monitor and, in the rare event of a catastrophic crash, manually restart.  Techonolgies which need configuring include:
+  <div class="flex ml-8 pb-4 gap-4">
+    <img src="/ubuntu.svg" width="50" />
+    <img src="/docker-vector-logo.svg" width="50" /> 
+    <img src="/NGINX-logo.svg" width="50" />
+    <img src="/certbot-logo.svg" width="50" />
+    <img src="/ssh-com-logo.svg" width="50" />
+  </div>
+
+1. **Spaces** is used to provide the [S3 storage](https://en.wikipedia.org/wiki/Amazon_S3) needed 
 to load, store or backup files, documents and images use.
+1. **PostgreSQL Managed Database Service** is used to support [![alt h](strapi-logo.svg)](https://strapi.io/)
+2. **Container Registry** and **Firewalls** are used to support the above.
 
 
-### S3 Archive Storage
+## Others
 
-[![alt b](google-cloud-logo.svg) Archive Storage]() is used as a seperate low cost method to back up all content in the S3 Standard Storage.
+[![alt b](google-cloud-logo.svg) Archive Storage]() provides as a seperate low cost S3 storage to back up all content in the S3 Standard Storage.
 
-### Managed Database Service
+[![alt b](Neon_logo.svg)](https://www.neon.tech/) is used by some clubs as an alternative to Digital Ocean PostgreSQL Managed Database Service
 
-Either [![alt b](digital-ocean-logo.svg)](https://www.digitalocean.com/) and/or [![alt b](Neon_logo.svg)](https://www.neon.tech/) PostgreSQL Managed Database Service is used to support [![alt h](strapi-logo.svg)](https://strapi.io/) and other applications.
+[![alt b](aws.svg) Amazon Simple Email Service](https://aws.amazon.com/ses/) is used to send emails from the web servers.
+
+[![alt b](zeptomail.svg)](https://www.zoho.com/zeptomail/) is used by one club as an alternative to AWS SES.
+
+[![alt b](stripe.svg)](https://stripe.com/gb) is used for Card payments
+
+[![alt h](gocardless.svg)](https://gocardless.com/) is used for Direct Debit payments
