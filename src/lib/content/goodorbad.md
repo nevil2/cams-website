@@ -15,7 +15,7 @@ However, they pose some risks if they replace (and undermine) other sources of i
 
 Selective Guidebooks are understandably popular and increasingly outselling or replacing definitive guidebooks.
 
-Whilst the guidebook themselves can be excellent, the overall trend could lead to less comprehensive infomation being available to climbers in future.
+Whilst the guidebook themselves can be excellent, the overall trend could lead to less comprehensive information being available to climbers in future.
 
 
 

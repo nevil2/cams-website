@@ -55,7 +55,7 @@ Whilst each club webiste is built on common principles and reuseable bits of cod
 
 This enables the graphic design of the website to be tailored to the requirements of that club and its branding.  The original design is typically done by a designer chosen by the club.
 
-Whilst clubs have common requirements in terms of functionality, each club has slightly different requirements as the what they need, and how the processes should work.  As such, all functionality is adapted to the specific needs of the club.
+Whilst clubs have common requirements in terms of functionality, each club has slightly different requirements as to what they need, and how the processes should work.  As such, all functionality is adapted to the specific needs of the club.
 </div>
 </div>
 
@@ -71,7 +71,7 @@ The Strapi CMS enables:
 - administrators to do most tasks through the front-end website
 - developers and administrations to access underlying records (e.g. hut bookings)
 - management of payments through Stripe and GoCardless
-- confirmation and infomation emails to be sent 
+- confirmation and information emails to be sent 
 
 As such, it is acting as both a CMS and an administration system
 

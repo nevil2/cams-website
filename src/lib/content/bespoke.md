@@ -36,7 +36,7 @@ It is a stand-alone SvelteKit website, supported by a separate Hono server using
 
 To support the reporting of compleations of hill lists via the Scottish Mountaineering Club and its website, an on-line service was created for submissions and administration.
 
-The frontend is embeded with the SMC website.
+The frontend is embedded with the SMC website.
 
 The backend is deployed as a Hono server using D1 storage (deployed on Cloudflare).
 
@@ -50,7 +50,7 @@ The backend is deployed as a Hono server using D1 storage (deployed on Cloudflar
 
 The Scottish Mountaineering Club now publishes its full catelogue of routes in Scotland through mobile-first full routes website.  This is separate from their main website due the difference in design and style.
 
-The site is a valuable resource to Scottish climbers and has enhanced has the image of the SMC.
+The site is a valuable resource to Scottish climbers and has enhanced the image of the SMC.
 
 The website uses the main SMC routes database server as its backend to deliver the data.
 </div>
