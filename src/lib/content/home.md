@@ -10,7 +10,7 @@
   <a href="https://climbers-club.co.uk">
     <img src="CC_logo_header.svg" width="400" />
   </a>
-  <a href="https://bmc.co.uk">
+  <a href="https://www.thebmc.co.uk/">
     <img src="bmc_logo.svg" width="200" />
   </a>
   <a href="https://alpineclub.org">
@@ -41,10 +41,8 @@
 </div>
 
 
-
-
-<center>The software is licenced or provided to Climbing Clubs free of charge</center>
-
 <center>We are not a commercial organisation and do not make money from this venture</center>
+
+<center>All software is licenced or provided to Climbing Clubs free of charge</center>
 
 <center>Individual clubs generate income from their guidebook publications and huts</center> 

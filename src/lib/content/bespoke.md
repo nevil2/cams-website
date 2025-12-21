@@ -60,3 +60,22 @@ The website uses the main SMC routes database server as its backend to deliver t
 </div>
 </div>
 
+<div class="flex">
+<div class="w-1/2">
+
+[![image alt](wired_website.png)](https://wired-guides.com/)
+</div>
+
+<div class="w-1/2 pl-4">
+
+## Wired Guides
+
+A simple website has been created to support sales of Wired Guides.
+
+It has inbuilt redirect for the QR codes printed in Wired Guides.
+
+</div>
+</div>
+
+
+

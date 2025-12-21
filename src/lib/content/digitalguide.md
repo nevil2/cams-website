@@ -8,7 +8,7 @@
   <a href="https://climbers-club.co.uk">
     <img src="CC_logo_header.svg" width="400" />
   </a> 
-  <a href="https://bmc.co.uk">
+  <a href="https://www.thebmc.co.uk/">
     <img src="bmc_logo.svg" width="200" />
   </a>
   <a href="https://new.frcc.co.uk">
@@ -97,9 +97,11 @@ The Scottish Mountaineering Club are also published annually submissions in the 
 
 ## New Route Site
 
-A separate SMC site was created to enable public access to the new routes submissions (about 9500 routes).
+A separate application enables public access to the routes information.
 
-The [frontend](https://www.smc.org.uk/climbs/newroutes) has been integrated into the SMC website.
+This is typically embeded within a club website and is used to publish information on all routes not in current guidebooks.  For the SMC, this is about 9500 routes.
+
+The Alpine Club use it to provide full access to Alpine route information to members.
+
 </div>
-
 </div>
