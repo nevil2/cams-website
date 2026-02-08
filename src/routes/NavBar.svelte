@@ -20,7 +20,7 @@
 			<a class="flex items-center text-lg text-gray-200 hover:text-white" href="/">Home</a>
 			<button
 				type="button"
-				class="inline-flex h-10 items-center rounded-lg p-2 text-sm text-gray-500 appearance-none border-0 bg-transparent focus:ring-2 focus:ring-gray-200 focus:outline-none sm:hidden"
+				class="inline-flex h-10 items-center rounded-lg p-2 text-sm text-gray-500  appearance-none border-0 bg-camsblue focus:ring-2 focus:ring-gray-200 focus:outline-none sm:hidden"
 				aria-expanded={navbarOpen}
 				aria-controls="mobile-menu"
 				onclick={toggleNavbarOpen}
