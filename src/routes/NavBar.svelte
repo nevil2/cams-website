@@ -6,16 +6,12 @@
 </script>
 
 {#snippet links()}
-	<a class="text-gray-200 hover:text-white" href="/guides">Routes Database</a>
-	<!-- <a class="text-gray-200 hover:text-white" href="/reporting">Route Reporting</a> -->
-	<!-- <a class="text-gray-200 hover:text-white" href="/topoeditor">TopoEditor</a> -->
-	<a class="text-gray-200 hover:text-white" href="/clubs">Club Websites</a>
-	<!-- <a class="text-gray-200 hover:text-white" href="/huts">Hut Booking</a> -->
-	<a class="text-gray-200 hover:text-white" href="/bespoke">Bespoke</a>
-	<!-- <a class="text-gray-200 hover:text-white" href="/about">About</a> -->
-	<a class="text-gray-200 hover:text-white" href="/development">Development</a>
-	<a class="text-gray-200 hover:text-white" href="/tech">Technology</a>
-	<a class="text-gray-200 hover:text-white" href="/deploy">Deployment</a>
+	<a class="text-gray-200 hover:text-white" href="/guides" onclick={() => navbarOpen = false}>Routes Database</a>
+	<a class="text-gray-200 hover:text-white" href="/clubs" onclick={() => navbarOpen = false}>Club Websites</a>
+	<a class="text-gray-200 hover:text-white" href="/bespoke" onclick={() => navbarOpen = false}>Bespoke</a>
+	<a class="text-gray-200 hover:text-white" href="/development" onclick={() => navbarOpen = false}>Development</a>
+	<a class="text-gray-200 hover:text-white" href="/tech" onclick={() => navbarOpen = false}>Technology</a>
+	<a class="text-gray-200 hover:text-white" href="/deploy" onclick={() => navbarOpen = false}>Deployment</a>
 {/snippet}
 
 <nav class="bg-camsblue fixed top-0 z-50 w-full py-1 text-gray-50">
@@ -24,7 +20,7 @@
 			<a class="flex items-center text-lg text-gray-200 hover:text-white" href="/">Home</a>
 			<button
 				type="button"
-				class="inline-flex h-10 items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 focus:outline-none sm:hidden "
+				class="inline-flex h-10 items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 bg-transparent focus:ring-2 focus:ring-gray-200 focus:outline-none sm:hidden"
 				aria-expanded={navbarOpen}
 				aria-controls="mobile-menu"
 				onclick={toggleNavbarOpen}
