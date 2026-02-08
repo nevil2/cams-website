@@ -2,9 +2,9 @@
 
 ## [![alt l](github-mark.svg) GitHub](https://github.com/)
 
-All code is stored in Git repositiories in club specifc accounts. Code pushed to GitHub triggers either:
+All code is stored in Git repositories in club specific accounts. Code pushed to GitHub triggers either:
 - Cloudflare to deploy the commit, or
-- GitHub Actions to build the commit into a [![alt b](docker-vector-logo.svg)](https://hub.docker.com/) container and push it to the revelant Container registry.
+- GitHub Actions to build the commit into a [![alt b](docker-vector-logo.svg)](https://hub.docker.com/) container and push it to the relevant Container registry.
 
 GitHub actions are also used for:
 - backup of Cloudflare D1 databases
@@ -23,7 +23,7 @@ All Sveltekit applications and the bespoke Hono servers are deployed on Cloudfla
 ## [![alt l](digital-ocean-logo.svg)](https://www.digitalocean.com/)
 
 1. **App platform** is used to automatically deploy [![alt h](strapi-logo.svg)](https://strapi.io/) the application from its container registry, supported by its **PostgreSQL Managed Database Service** and **S3 storage**.
-2. **Droplets** (Linux-based virtual machines) are currently used the routes database servers, as they have persistent storage which  allows use of local SQLite database.  VM require more work the managed platforms to set up, update, maintain, monitor and, in the rare event of a catastrophic crash, manually restart.  Techonolgies which need configuring include:
+2. **Droplets** (Linux-based virtual machines) are currently used the routes database servers, as they have persistent storage which  allows use of local SQLite database.  VM require more work the managed platforms to set up, update, maintain, monitor and, in the rare event of a catastrophic crash, manually restart.  Technologies which need configuring include:
   <div class="flex ml-8 pb-4 gap-4">
     <img src="/ubuntu.svg" width="50" />
     <img src="/docker-vector-logo.svg" width="50" /> 
@@ -40,7 +40,7 @@ to load, store or backup files, documents and images use.
 
 ## Others
 
-[![alt b](google-cloud-logo.svg) Archive Storage]() provides as a seperate low cost S3 storage to back up all content in the S3 Standard Storage.
+[![alt b](google-cloud-logo.svg) Archive Storage](https://cloud.google.com/storage) provides a separate low cost S3 storage to back up all content in the S3 Standard Storage.
 
 [![alt b](Neon_logo.svg)](https://www.neon.tech/) is used by some clubs as an alternative to Digital Ocean PostgreSQL Managed Database Service
 

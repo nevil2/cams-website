@@ -1,6 +1,5 @@
-<base target="_blank">
 
-[![image alt N](Topo_Editor_2.jpg)](https://topoeditor.com)
+[![TopoEditor application N](Topo_Editor_2.jpg)](https://topoeditor.com)
 
 The TopoEditor is: 
 - possibly the world's most advanced tool dedicated to creating climbing topos.

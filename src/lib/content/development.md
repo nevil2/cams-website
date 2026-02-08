@@ -14,7 +14,7 @@ and a team of contributors, administrators and testers.
 
 ## Going Forward
 
-The target is to reduce key dependancies and spread the load between volunteers.  This is easier now that the ground work of standardising the technical solutions has been completed.
+The target is to reduce key dependencies and spread the load between volunteers.  This is easier now that the ground work of standardising the technical solutions has been completed.
 
 ### Club Teams
 

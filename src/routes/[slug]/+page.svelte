@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { error } from '@sveltejs/kit'
 	import { page } from '$app/state'
 	import Markdown from '$lib/Markdown.svelte'
 	import home from '$lib/content/home.md?raw'
@@ -16,26 +17,55 @@
 	import bespoke from '$lib/content/bespoke.md?raw'
 	import development from '$lib/content/development.md?raw'
 
-	let content = $derived(
-		{
-			home,
-			contribute,
-			people,
-			tech,
-			deploy,
-			clubs,
-			huts,
-			guides,
-			himalayan_index,
-			reporting,
-			topoeditor,
-			learnsvelte,
-			bespoke,
-			development
-		}[page.params.slug || '']
-	)
+	const titles: Record<string, string> = {
+		home: 'Home',
+		contribute: 'Contribute',
+		people: 'People',
+		tech: 'Technology',
+		deploy: 'Deployment',
+		clubs: 'Club Websites',
+		huts: 'Hut Booking',
+		guides: 'Routes Database',
+		himalayan_index: 'Himalayan Index',
+		reporting: 'Route Reporting',
+		topoeditor: 'TopoEditor',
+		learnsvelte: 'Learn Svelte',
+		bespoke: 'Bespoke',
+		development: 'Development'
+	}
+
+	const pages: Record<string, string> = {
+		home,
+		contribute,
+		people,
+		tech,
+		deploy,
+		clubs,
+		huts,
+		guides,
+		himalayan_index,
+		reporting,
+		topoeditor,
+		learnsvelte,
+		bespoke,
+		development
+	}
+
+	let slug = $derived(page.params.slug ?? '')
+	let content = $derived(pages[slug])
+	let title = $derived(titles[slug])
+
+	$effect(() => {
+		if (!content) error(404, 'Page not found')
+	})
 </script>
 
-<div class="prose prose-a:no-underline max-w-none px-4 sm:px-8">
+<svelte:head>
+	{#if title}
+		<title>{title} — Climbing and Mountaineering Software</title>
+	{/if}
+</svelte:head>
+
+<div class="px-4 sm:px-8">
 	<Markdown {content} />
 </div>

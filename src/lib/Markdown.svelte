@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { marked } from 'marked'
+	import { marked, type RendererObject } from 'marked'
 
 	let {
 		content
@@ -7,28 +7,19 @@
 		content: string | undefined
 	} = $props()
 
-	// const renderer = {
-	// 	link: (href: any, _: undefined, title: string): string | false => {
-	// 		if (!href) return title
-	// 		if (typeof href === 'string') {
-	// 			if (!!href && href.includes('http')) {
-	// 				return `<a href="${href}" target="_blank" rel="noopener noreferrer">${title || href}</a>`
-	// 			} else {
-	// 				return `<a href="${href}">${title || href}</a>`
-	// 			}
-	// 		} else if (href.href) {
-	// 			if (!!href.href && href.href.includes('http')) {
-	// 				return `<a href="${href.href}" target="_blank" rel="noopener noreferrer">${title || href.text}</a>`
-	// 			} else {
-	// 				return `<a href="${href.href}">${title || href.text}</a>`
-	// 			}
-	// 		} else {
-	// 			return title
-	// 		}
-	// 	}
-	// } as any
+	const renderer: RendererObject = {
+		link({ href, text }) {
+			const inner = text?.startsWith('![')
+				? marked.parseInline(text ?? '')
+				: (text ?? '')
+			if (href && href.startsWith('http')) {
+				return `<a href="${href}" target="_blank" rel="noopener noreferrer">${inner}</a>`
+			}
+			return `<a href="${href}">${inner}</a>`
+		}
+	}
 
-	// marked.use({ renderer })
+	marked.use({ renderer })
 </script>
 
 <div class="markdown">

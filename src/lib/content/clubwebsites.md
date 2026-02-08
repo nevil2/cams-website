@@ -1,31 +1,30 @@
-<base target="_blank">
 
 <h1 style="text-align: center; margin-top: 16px;">Club Website</h1>
 
 <div class="flex gap-8 items-center justify-center flex-wrap sm:flex-nowrap">
   <a href="https://smc.org.uk">
-    <img src="SMC_Horiz_BLK.svg" width="200" />
+    <img src="SMC_Horiz_BLK.svg" alt="" width="200" />
   </a>
   <a href="https://climbers-club.co.uk">
-    <img src="CC_logo_header.svg" width="400" />
+    <img src="CC_logo_header.svg" alt="" width="400" />
   </a>
   <a href="https://alpineclub.org">
-    <img src="AC_logo_colour.svg" width="140" />
+    <img src="AC_logo_colour.svg" alt="" width="140" />
   </a>
   <a href="https://pinnacleclub.co.uk">
-    <img src="PC_logo.svg" width="200" />
+    <img src="PC_logo.svg" alt="" width="200" />
   </a>
   <a href="https://new.frcc.co.uk">
-    <img src="FRCC_logo.svg" width="80" />
+    <img src="FRCC_logo.svg" alt="" width="80" />
   </a>
 </div>
 
-<div class="flex">
-<div class="w-1/2 pr-4">
+<div class="flex flex-col sm:flex-row">
+<div class="w-full sm:w-1/2 pr-4">
 
 ## Multi Purpose
 
-The Club website simulteanously achieve multiple objectives for the clubs to:
+The Club website simultaneously achieves multiple objectives for the clubs to:
 
 1. Present themselves publicly
 2. Provide to, and collect from, the public with information on their climbing areas
@@ -36,22 +35,22 @@ The Club website simulteanously achieve multiple objectives for the clubs to:
 7.  Administer the club
 
 </div>
-<div class="w-1/2">
+<div class="w-full sm:w-1/2">
 
-[![image](SMCwebsitehome.jpg)](https://smc.org.uk)
+[![SMC website home page](SMCwebsitehome.jpg)](https://smc.org.uk)
 </div>
 </div>
 
-<div class="flex">
-<div class="w-1/2">
+<div class="flex flex-col-reverse sm:flex-row">
+<div class="w-full sm:w-1/2">
 
-[![image](Pinnacle_Club.jpg)](https://pinnacleclub.co.uk)
+[![Pinnacle Club website](Pinnacle_Club.jpg)](https://pinnacleclub.co.uk)
 </div>
-<div class="w-1/2 pl-4">
+<div class="w-full sm:w-1/2 pl-4">
 
 ## Custom Design & Functionality
 
-Whilst each club webiste is built on common principles and reuseable bits of code, each club website has its own code base which belongs to that club.
+Whilst each club website is built on common principles and reusable bits of code, each club website has its own code base which belongs to that club.
 
 This enables the graphic design of the website to be tailored to the requirements of that club and its branding.  The original design is typically done by a designer chosen by the club.
 
@@ -59,8 +58,8 @@ Whilst clubs have common requirements in terms of functionality, each club has s
 </div>
 </div>
 
-<div class="flex">
-<div class="w-1/2 pr-4">
+<div class="flex flex-col sm:flex-row">
+<div class="w-full sm:w-1/2 pr-4">
 
 ## Strapi CMS
 
@@ -76,18 +75,18 @@ The Strapi CMS enables:
 As such, it is acting as both a CMS and an administration system
 
 </div>
-<div class="w-1/2">
+<div class="w-full sm:w-1/2">
 
-[![image](cc_website.png)](https://climbers-club.co.uk)
+[![Climbers Club website](cc_website.png)](https://climbers-club.co.uk)
 </div>
 </div>
 
-<div class="flex">
-<div class="w-1/2">
+<div class="flex flex-col-reverse sm:flex-row">
+<div class="w-full sm:w-1/2">
 
-[![image](ac_website.png)](https://alpineclub.org)
+[![Alpine Club website](ac_website.png)](https://alpineclub.org)
 </div>
-<div class="w-1/2 pl-4">
+<div class="w-full sm:w-1/2 pl-4">
 
 ## Functionality
 
@@ -113,30 +112,30 @@ As such, it is acting as both a CMS and an administration system
 </div>
 </div>
 
-<div class="flex">
-<div class="w-1/2 pr-4">
+<div class="flex flex-col sm:flex-row">
+<div class="w-full sm:w-1/2 pr-4">
 
 ## Philosophy
 
 Each Club owns its own site and code base whilst potentially benefiting from a common approach:
  - Common solutions
- - Reuseable code
+ - Reusable code
  - Secure transfer between clubs (e.g. for shop or bookings)
  - Cross fertilisation (ideas, improvements, bugs)
  - Cross club support / maintenance
 
 Our approach aims to provide:
  - Reduced Club Admin
- - Reduced Presure on Web Manager (easy updating of content through STRAPI)
+ - Reduced Pressure on Web Manager (easy updating of content through STRAPI)
  - Better functionality
  - Design Freedom for better branding
  - Faster and more responsive website
  - Lower Maintenance
 
 </div>
-<div class="w-1/2">
+<div class="w-full sm:w-1/2">
 
-[![image](frcc_website.png)](https://new.frcc.co.uk)
+[![FRCC website](frcc_website.png)](https://new.frcc.co.uk)
 </div>
 </div>
 

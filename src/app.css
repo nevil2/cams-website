@@ -5,7 +5,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: light;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
@@ -65,10 +65,6 @@ nav a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -128,16 +124,16 @@ ul {
 		list-style-position: inside;
 		list-style-image: initial;
 		list-style-type: disc;
-		break-inside: 'avoid';
-		text-wrap: 'pretty';
+		break-inside: avoid;
+		text-wrap: pretty;
 	}
 
 ol {
   list-style-position: inside;
   list-style-image: initial;
   list-style-type: decimal;
-  break-inside: 'avoid';
-  text-wrap: 'pretty';
+  break-inside: avoid;
+  text-wrap: pretty;
   margin-top: 10px;
   margin-bottom: 4px;
 }
@@ -245,7 +241,7 @@ img[alt$="xl"] {
 .markdown td {
 		border: 2px solid;
 		border-collapse: collapse;
-		border-color: var(--color-primary-200);
+		border-color: var(--color-camsneutral);
 		padding: 4px 8px;
 		font-size: 14px;
 	}
@@ -253,7 +249,7 @@ img[alt$="xl"] {
 .markdown th {
 	border: 2px solid;
 	border-collapse: collapse;
-	border-color: var(--color-primary-200);
+	border-color: var(--color-camsneutral);
 	padding: 4px 8px;
 	font-weight: 600;
 }

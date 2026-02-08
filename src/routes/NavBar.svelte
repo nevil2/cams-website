@@ -24,10 +24,12 @@
 			<a class="flex items-center text-lg text-gray-200 hover:text-white" href="/">Home</a>
 			<button
 				type="button"
-				class="inline-flex h-10 items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 focus:outline-none sm:hidden dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+				class="inline-flex h-10 items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:ring-2 focus:ring-gray-200 focus:outline-none sm:hidden "
+				aria-expanded={navbarOpen}
+				aria-controls="mobile-menu"
 				onclick={toggleNavbarOpen}
 			>
-				<span class="sr-only">Open main menu</span>
+				<span class="sr-only">{navbarOpen ? 'Close main menu' : 'Open main menu'}</span>
 				<svg
 					class="h-6 w-6"
 					aria-hidden="true"
@@ -49,7 +51,7 @@
 			</div>
 		</div>
 		{#if navbarOpen}
-			<div class="mt-2 flex flex-col space-y-2 sm:hidden">
+			<div id="mobile-menu" class="mt-2 flex flex-col space-y-2 sm:hidden">
 				{@render links()}
 			</div>
 		{/if}

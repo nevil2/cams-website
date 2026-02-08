@@ -1,26 +1,25 @@
-<base target="_blank">
 
 
 <div class="flex gap-8 items-center justify-center flex-wrap sm:flex-nowrap">
   <a href="https://smc.org.uk">
-    <img src="SMC_Horiz_BLK.svg" width="200" />
+    <img src="SMC_Horiz_BLK.svg" alt="" width="200" />
   </a>
   <a href="https://climbers-club.co.uk">
-    <img src="CC_logo_header.svg" width="400" />
-  </a> 
+    <img src="CC_logo_header.svg" alt="" width="400" />
+  </a>
   <a href="https://www.thebmc.co.uk/">
-    <img src="bmc_logo.svg" width="200" />
+    <img src="bmc_logo.svg" alt="" width="200" />
   </a>
   <a href="https://new.frcc.co.uk">
-    <img src="FRCC_logo.svg" width="80" />
+    <img src="FRCC_logo.svg" alt="" width="80" />
   </a>
   <a href="https://alpineclub.org">
-    <img src="AC_logo_colour.svg" width="140" />
+    <img src="AC_logo_colour.svg" alt="" width="140" />
   </a>
 </div>
 
-<div class="flex">
-<div class="w-1/2 pr-4">
+<div class="flex flex-col sm:flex-row">
+<div class="w-full sm:w-1/2 pr-4">
 
 ## Routes Database
 
@@ -32,29 +31,29 @@ Access to the core application is restricted.
 
 The core application has been extended with:
  - [Feeder web application](https://smc.org.uk/climbs/submission) for collecting new route details direct from climbers
- - [TopoEditor](https://topoeditor.com) software for creating interactive topos suitable for print, web and mobile 
+ - [TopoEditor](https://topoeditor.com) software for creating interactive topos suitable for print, web and mobile
  - [Public web application](https://smc.org.uk/climbs/newroutes) for disseminating new route information
- - Transfer process to <span style="background-color: black; padding: 4px 4px 0px 4px; border-radius: 4px; display: inline-block;">[![image alt b](27crags.png)](https://27crags.com/)</span> mobile app.
+ - Transfer process to <span style="background-color: black; padding: 4px 4px 0px 4px; border-radius: 4px; display: inline-block;">[![27crags logo b](27crags.png)](https://27crags.com/)</span> mobile app.
  - Archive facility with catalogue and digital storage for club climbing related archives
  - Bolt management facility (in development) aimed at Bolt funds
-  
-</div>
-<div class="w-1/2">
 
-![image](DigitalGuide.jpg)
+</div>
+<div class="w-full sm:w-1/2">
+
+![Routes database application](DigitalGuide.jpg)
 </div>
 </div>
 
-<div class="flex">
-<div class="w-1/2">
+<div class="flex flex-col-reverse sm:flex-row">
+<div class="w-full sm:w-1/2">
 
-[![image](Topo_Editor_2.jpg)](https://topoeditor.com)
+[![TopoEditor application](Topo_Editor_2.jpg)](https://topoeditor.com)
 </div>
-<div class="w-1/2 pl-4">
+<div class="w-full sm:w-1/2 pl-4">
 
 ## TopoEditor
 
-The TopoEditor is: 
+The TopoEditor is:
 - possibly the world's most advanced tool dedicated to creating climbing topos.
 - integrated into the Routes Database applications and New route submission processes
 - available as a [free online tool](https://topoeditor.com) for anyone to use.
@@ -65,8 +64,8 @@ The TopoEditor is:
 </div>
 </div>
 
-<div class="flex">
-<div class="w-1/2 pr-4">
+<div class="flex flex-col sm:flex-row">
+<div class="w-full sm:w-1/2 pr-4">
 
 ## New Route Reporting
 
@@ -78,22 +77,22 @@ The submissions are moderated by the club moderator and subsequently transferred
 
 To date, thousands of routes have been collected and managed through this application.
 
-Clubs can publish the data, topos and comments in their websites (see below). 
+Clubs can publish the data, topos and comments in their websites (see below).
 
 The Scottish Mountaineering Club are also published annually submissions in the new routes sections of their Journal.
 </div>
-<div class="w-1/2">
+<div class="w-full sm:w-1/2">
 
-![image](cc_submission.png)
+![New route submission form](cc_submission.png)
 </div>
 </div>
 
-<div class="flex">
-<div class="w-1/2">
+<div class="flex flex-col-reverse sm:flex-row">
+<div class="w-full sm:w-1/2">
 
-![image](NewRoutesSite.jpg)
+![New routes public site](NewRoutesSite.jpg)
 </div>
-<div class="w-1/2 pl-4">
+<div class="w-full sm:w-1/2 pl-4">
 
 ## New Route Site
 

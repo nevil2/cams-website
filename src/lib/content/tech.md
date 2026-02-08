@@ -1,4 +1,3 @@
-<base target="_blank">
 
 # Technologies
 
@@ -29,7 +28,7 @@ Some applications were intially built using a range of other technologies includ
 - [![alt h](python-logo.svg)](https://www.python.org/) / [![alt h](fastapi-logo.svg) FastAPI](https://fastapi.tiangolo.com/) / [![alt h](pydantic-logo.svg) Pydantic](https://docs.pydantic.dev/) /
 [![alt h](sqlalchemy-logo.png)](https://www.sqlalchemy.org/) for bespoke Munros and Himalayan Index servers
 
-They have now been ported to the above chosen standard techonolgies.
+They have now been ported to the above chosen standard technologies.
 
 
 

@@ -1,4 +1,3 @@
-<base target="_blank">
 
 ![image alt N](Photo_1_from_Roger.jpg)
 

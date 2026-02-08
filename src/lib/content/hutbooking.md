@@ -1,6 +1,5 @@
-<base target="_blank">
 
-![image alt N](HutBookingMap.jpg)
+![Hut booking map N](HutBookingMap.jpg)
 
 ## Interclub Hut Booking System and Website
 
@@ -15,7 +14,7 @@ The objectives are:
 
 ### Technology
 
-[![image alt LL](svelte-logo.svg)](https://svelte.dev/) **Svelte**,
+[![Svelte logo LL](svelte-logo.svg)](https://svelte.dev/) **Svelte**,
 [![alt h](svelte-kit-logo.svg)](https://kit.svelte.dev/), 
 [![alt h](tailwindcss-logo.svg)](https://tailwindcss.com/),
 [![alt h](typescript-logo.svg)](https://www.typescriptlang.org/) **Typescript**,
@@ -31,5 +30,5 @@ The objectives are:
 - R2 for storing images / documents / backups in S3 storage (10GB allowance)
 - Email through MailChannels
 
-Cloudflare approach is much more efficent (and responsive) than traditional 'serverless'.  The prototype deployment will help assess whether it can meet all the projects needs.
+Cloudflare approach is much more efficient (and responsive) than traditional 'serverless'.  The prototype deployment will help assess whether it can meet all the projects needs.
 

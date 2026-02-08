@@ -1,26 +1,25 @@
-<base target="_blank">
 
 
 <h1 style="text-align: center; margin-top: 16px;">Climbing and Mountaineering Software</h1>
 
 <div class="flex gap-8 items-center justify-center flex-wrap sm:flex-nowrap">
   <a href="https://smc.org.uk">
-    <img src="SMC_Horiz_BLK.svg" width="200" />
+    <img src="SMC_Horiz_BLK.svg" alt="" width="200" />
   </a>
   <a href="https://climbers-club.co.uk">
-    <img src="CC_logo_header.svg" width="400" />
+    <img src="CC_logo_header.svg" alt="" width="400" />
   </a>
   <a href="https://www.thebmc.co.uk/">
-    <img src="bmc_logo.svg" width="200" />
+    <img src="bmc_logo.svg" alt="" width="200" />
   </a>
   <a href="https://alpineclub.org">
-    <img src="AC_logo_colour.svg" width="140" />
+    <img src="AC_logo_colour.svg" alt="" width="140" />
   </a>
   <a href="https://pinnacleclub.co.uk">
-    <img src="PC_logo.svg" width="200" />
+    <img src="PC_logo.svg" alt="" width="200" />
   </a>
   <a href="https://new.frcc.co.uk">
-    <img src="FRCC_logo.svg" width="80" />
+    <img src="FRCC_logo.svg" alt="" width="80" />
   </a>
 </div>
 
@@ -37,7 +36,7 @@
 <div class="flex flex-wrap gap-16 justify-center my-10 homelink">
   <a href="/guides">Print & Digital Guidebook Publishing</a>
   <a href="/clubs">Club Websites</a>
-  <a>Bespoke Applications</a>
+  <a href="/bespoke">Bespoke Applications</a>
 </div>
 
 
