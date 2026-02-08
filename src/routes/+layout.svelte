@@ -8,6 +8,7 @@
 
 <svelte:head>
 	<title>Climbing and Mountaineering Software</title>
+	<meta name="color-scheme" content="light">
 </svelte:head>
 
 <a href="#main" class="sr-only">Skip to main content</a>
