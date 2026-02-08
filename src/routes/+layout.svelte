@@ -16,7 +16,7 @@
 		<Navbar />
 	</header>
 	<div class="overflow-y-auto mt-10 mb-auto flex w-full justify-center">
-		<main id="main" class="container mx-auto w-full max-w-5xl">
+		<main id="main" class="container mx-auto w-full max-w-5xl pt-4 [&>div>*:first-child]:mt-0">
 			{@render children()}
 		</main>
 	</div>
