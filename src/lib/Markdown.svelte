@@ -9,9 +9,7 @@
 
 	const renderer: RendererObject = {
 		link({ href, text }) {
-			const inner = text?.startsWith('![')
-				? marked.parseInline(text ?? '')
-				: (text ?? '')
+			const inner = text?.startsWith('![') ? marked.parseInline(text ?? '') : (text ?? '')
 			if (href && href.startsWith('http')) {
 				return `<a href="${href}" target="_blank" rel="noopener noreferrer">${inner}</a>`
 			}

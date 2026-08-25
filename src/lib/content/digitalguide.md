@@ -1,5 +1,3 @@
-
-
 <div class="flex gap-8 items-center justify-center flex-wrap sm:flex-nowrap">
   <a href="https://smc.org.uk">
     <img src="SMC_Horiz_BLK.svg" alt="" width="200" />
@@ -24,18 +22,20 @@
 ## Routes Database
 
 This is a web-based routes application specially designed:
- - for Guidebook producers, allowing multiple descriptions of routes from different guidebooks
- - for web and mobile publishing
+
+- for Guidebook producers, allowing multiple descriptions of routes from different guidebooks
+- for web and mobile publishing
 
 Access to the core application is restricted.
 
 The core application has been extended with:
- - [Feeder web application](https://smc.org.uk/climbs/submission) for collecting new route details direct from climbers
- - [TopoEditor](https://topoeditor.com) software for creating interactive topos suitable for print, web and mobile
- - [Public web application](https://smc.org.uk/climbs/newroutes) for disseminating new route information
- - Transfer process to <span style="background-color: black; padding: 4px 4px 0px 4px; border-radius: 4px; display: inline-block;">[![27crags logo b](27crags.png)](https://27crags.com/)</span> mobile app.
- - Archive facility with catalogue and digital storage for club climbing related archives
- - Bolt management facility (in development) aimed at Bolt funds
+
+- [Feeder web application](https://smc.org.uk/climbs/submission) for collecting new route details direct from climbers
+- [TopoEditor](https://topoeditor.com) software for creating interactive topos suitable for print, web and mobile
+- [Public web application](https://smc.org.uk/climbs/newroutes) for disseminating new route information
+- Transfer process to <span style="background-color: black; padding: 4px 4px 0px 4px; border-radius: 4px; display: inline-block;">[![27crags logo b](27crags.png)](https://27crags.com/)</span> mobile app.
+- Archive facility with catalogue and digital storage for club climbing related archives
+- Bolt management facility (in development) aimed at Bolt funds
 
 </div>
 <div class="w-full sm:w-1/2">
@@ -54,10 +54,10 @@ The core application has been extended with:
 ## TopoEditor
 
 The TopoEditor is:
+
 - possibly the world's most advanced tool dedicated to creating climbing topos.
 - integrated into the Routes Database applications and New route submission processes
 - available as a [free online tool](https://topoeditor.com) for anyone to use.
-
 
 **It is now available as a [Web Component](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) for third parties to integrate it into their web applications.**
 
@@ -71,7 +71,7 @@ The TopoEditor is:
 
 This is a separate application which collects new crag and route information from the public.
 
-The application is embedded in participating clubs websites.  It includes TopoEditor for creating topos with the new route(s).
+The application is embedded in participating clubs websites. It includes TopoEditor for creating topos with the new route(s).
 
 The submissions are moderated by the club moderator and subsequently transferred electronically into the Club's main routes database.
 
@@ -98,7 +98,7 @@ The Scottish Mountaineering Club are also published annually submissions in the 
 
 A separate application enables public access to the routes information.
 
-This is typically embedded within a club website and is used to publish information on all routes not in current guidebooks.  For the SMC, this is about 9500 routes.
+This is typically embedded within a club website and is used to publish information on all routes not in current guidebooks. For the SMC, this is about 9500 routes.
 
 The Alpine Club use it to provide full access to Alpine route information to members.
 

@@ -8,7 +8,7 @@
 
 <svelte:head>
 	<title>Climbing and Mountaineering Software</title>
-	<meta name="color-scheme" content="light">
+	<meta name="color-scheme" content="light" />
 </svelte:head>
 
 <a href="#main" class="sr-only">Skip to main content</a>
@@ -16,7 +16,7 @@
 	<header>
 		<Navbar />
 	</header>
-	<div class="overflow-y-auto mt-10 mb-auto flex w-full justify-center">
+	<div class="mt-10 mb-auto flex w-full justify-center overflow-y-auto">
 		<main id="main" class="container mx-auto w-full max-w-5xl pt-4 [&>div>*:first-child]:mt-0">
 			{@render children()}
 		</main>

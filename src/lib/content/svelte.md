@@ -1,4 +1,3 @@
-
 # Learning SVELTE
 
 Main website for Svelte: https://svelte.dev/
@@ -9,7 +8,6 @@ They have excellent tutorial: https://learn.svelte.dev/tutorial/welcome-to-svelt
 
 It might be easier to learn Svelte first, and then the additional functionality provided by SvelteKit.
 
-
 ## Create Svelte App
 
 A Svelte app (without SvelteKit) can be created with Vite.
@@ -19,14 +17,14 @@ This will create an SPA (Single Page App) which is rendered in the browser.
 `npm create vite@latest svelte-demo`
 
 choose:
- - Svelte
- - Javascript
+
+- Svelte
+- Javascript
 
 `cd svelte-demo` to go to directory  
 `npm install` to install software  
 `code .` to open VS Code (editor)  
 `npm run dev` to run locally in development mode
-
 
 **To build:**
 
@@ -40,10 +38,10 @@ Drag **dist** folder into upload box on Netlify.
 
 This site is built with vite, svelte and svelte-navigator (for page navigation).
 
-
 ## Create SvelteKit App
 
 SvelteKit is a meta framework around Svelte which enables:
+
 - routing (i.e. different web pages based on directory structure)
 - choice of deployment (full stack, static, client-side, server-side, pre-rendering during build, hybrid rendering, etc)
 - deployment mode will depend on cloud provider and adapter chosen, as well as code configuration.
@@ -51,9 +49,10 @@ SvelteKit is a meta framework around Svelte which enables:
 `npm create svelte@latest sveltekit-demo`
 
 choose:
- - SvelteKit demo app
- - JavaScript with JSDoc comments
- - None
+
+- SvelteKit demo app
+- JavaScript with JSDoc comments
+- None
 
 `cd sveltekit-demo` to go to directory  
 `npm install` to install software  
@@ -67,10 +66,9 @@ choose:
 Go to GitHub or GitLab and create a new repository.
 Follow instructions to link and push.
 
-Go to Netlify.  Choose new site, deployed from GitHUb/GitLab.  Follow instructions / process.
+Go to Netlify. Choose new site, deployed from GitHUb/GitLab. Follow instructions / process.
 
 Site will be rebuilt on Netlify whenever new code is push to Git repository.
-
 
 ## Useful Libraries
 
@@ -91,4 +89,3 @@ This is main library used to render maps (other than the Google Maps) in webpage
 ### [TailwindCSS](https://tailwindcss.com/)
 
 This enables CSS to be written inline in short-hand as a series of classes.
-

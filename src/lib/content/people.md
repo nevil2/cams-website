@@ -1,4 +1,3 @@
-
 # People
 
 ### Nevil Hewitt
@@ -9,14 +8,10 @@ Nevil created this project, designed the overall system and developed the core s
 
 ### Roger Everett
 
-![image alt L](Roger.jpg) 
-Roger, a previous Series Editor of SMC guidebooks, has a long-standing interest in providing quality climbing information to the climbing public. There is much more to a successful project than writing code, and Roger has turned his hand to almost everything else. He provided the initial content, some 3 million words of SMC data, which kick-started the database application. He has since been involved with the design and testing of the system, created documentation and training videos, and providing training sessions to help new users. He has also loaded many tens of thousands of routes into the system, using the very rapid bulk loading capabilities of the application. 
-
+![image alt L](Roger.jpg)
+Roger, a previous Series Editor of SMC guidebooks, has a long-standing interest in providing quality climbing information to the climbing public. There is much more to a successful project than writing code, and Roger has turned his hand to almost everything else. He provided the initial content, some 3 million words of SMC data, which kick-started the database application. He has since been involved with the design and testing of the system, created documentation and training videos, and providing training sessions to help new users. He has also loaded many tens of thousands of routes into the system, using the very rapid bulk loading capabilities of the application.
 
 <!-- ### Sponsors, Contributors and Volunteers -->
-
-
-  
 
 <!-- ### Simon Richard
 
@@ -43,6 +38,3 @@ Whilst Rob has not worked direct on the project, his input, as Manager of the Sc
 
 
 ### Climbers Club -->
-
-
-

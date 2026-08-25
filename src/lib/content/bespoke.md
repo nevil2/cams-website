@@ -1,4 +1,3 @@
-
 # Bespoke
 
 Several bespoke application have been built for specific club needs.
@@ -46,7 +45,7 @@ The backend is deployed as a Hono server using D1 storage (deployed on Cloudflar
 
 ## SMC Full Routes Site
 
-The Scottish Mountaineering Club now publishes its full catalogue of routes in Scotland through mobile-first full routes website.  This is separate from their main website due the difference in design and style.
+The Scottish Mountaineering Club now publishes its full catalogue of routes in Scotland through mobile-first full routes website. This is separate from their main website due the difference in design and style.
 
 The site is a valuable resource to Scottish climbers and has enhanced the image of the SMC.
 
@@ -74,6 +73,3 @@ It has inbuilt redirect for the QR codes printed in Wired Guides.
 
 </div>
 </div>
-
-
-

@@ -6,12 +6,24 @@
 </script>
 
 {#snippet links()}
-	<a class="text-gray-200 hover:text-white" href="/guides" onclick={() => navbarOpen = false}>Routes Database</a>
-	<a class="text-gray-200 hover:text-white" href="/clubs" onclick={() => navbarOpen = false}>Club Websites</a>
-	<a class="text-gray-200 hover:text-white" href="/bespoke" onclick={() => navbarOpen = false}>Bespoke</a>
-	<a class="text-gray-200 hover:text-white" href="/development" onclick={() => navbarOpen = false}>Development</a>
-	<a class="text-gray-200 hover:text-white" href="/tech" onclick={() => navbarOpen = false}>Technology</a>
-	<a class="text-gray-200 hover:text-white" href="/deploy" onclick={() => navbarOpen = false}>Deployment</a>
+	<a class="text-gray-200 hover:text-white" href="/guides" onclick={() => (navbarOpen = false)}
+		>Routes Database</a
+	>
+	<a class="text-gray-200 hover:text-white" href="/clubs" onclick={() => (navbarOpen = false)}
+		>Club Websites</a
+	>
+	<a class="text-gray-200 hover:text-white" href="/bespoke" onclick={() => (navbarOpen = false)}
+		>Bespoke</a
+	>
+	<a class="text-gray-200 hover:text-white" href="/development" onclick={() => (navbarOpen = false)}
+		>Development</a
+	>
+	<a class="text-gray-200 hover:text-white" href="/tech" onclick={() => (navbarOpen = false)}
+		>Technology</a
+	>
+	<a class="text-gray-200 hover:text-white" href="/deploy" onclick={() => (navbarOpen = false)}
+		>Deployment</a
+	>
 {/snippet}
 
 <nav class="bg-camsblue fixed top-0 z-50 w-full py-1 text-gray-50">
@@ -21,7 +33,7 @@
 			<button
 				type="button"
 				style="background-color: #e3e6f2;"
-				class="inline-flex h-10 items-center rounded-lg p-2 text-sm text-gray-500 border-0 focus:ring-2 focus:ring-gray-200 focus:outline-none sm:hidden"
+				class="inline-flex h-10 items-center rounded-lg border-0 p-2 text-sm text-gray-500 focus:ring-2 focus:ring-gray-200 focus:outline-none sm:hidden"
 				aria-expanded={navbarOpen}
 				aria-controls="mobile-menu"
 				onclick={toggleNavbarOpen}

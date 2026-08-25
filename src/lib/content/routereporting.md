@@ -1,4 +1,3 @@
-
 ![New route submission form N](cc_submission.png)
 
 ## New Route Reporting
@@ -18,8 +17,6 @@ The [submissions page](https://www.smc.org.uk/climbs/submission) has now been in
 <hr>
 
 ![New routes public site N](NewRoutesSite.jpg)
-
-
 
 ## New Route Site
 

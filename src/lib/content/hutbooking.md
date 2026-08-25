@@ -1,4 +1,3 @@
-
 ![Hut booking map N](HutBookingMap.jpg)
 
 ## Interclub Hut Booking System and Website
@@ -7,15 +6,14 @@ Work has started on creating an [Interclub Hut Booking System](https://hut-booki
 
 The objectives are:
 
- - to build one solution that is appropriate for many clubs (less work and maintenance)
- - to facilitate booking kindred club huts (increases club revenues, improves member service)
- - enable payment online (reduces administration, improves cashflow)
-
+- to build one solution that is appropriate for many clubs (less work and maintenance)
+- to facilitate booking kindred club huts (increases club revenues, improves member service)
+- enable payment online (reduces administration, improves cashflow)
 
 ### Technology
 
 [![Svelte logo LL](svelte-logo.svg)](https://svelte.dev/) **Svelte**,
-[![alt h](svelte-kit-logo.svg)](https://kit.svelte.dev/), 
+[![alt h](svelte-kit-logo.svg)](https://kit.svelte.dev/),
 [![alt h](tailwindcss-logo.svg)](https://tailwindcss.com/),
 [![alt h](typescript-logo.svg)](https://www.typescriptlang.org/) **Typescript**,
 **HTML** and **CSS**.
@@ -30,5 +28,4 @@ The objectives are:
 - R2 for storing images / documents / backups in S3 storage (10GB allowance)
 - Email through MailChannels
 
-Cloudflare approach is much more efficient (and responsive) than traditional 'serverless'.  The prototype deployment will help assess whether it can meet all the projects needs.
-
+Cloudflare approach is much more efficient (and responsive) than traditional 'serverless'. The prototype deployment will help assess whether it can meet all the projects needs.
