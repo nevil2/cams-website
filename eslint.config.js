@@ -38,5 +38,17 @@ export default defineConfig(
 		// Override or add rule settings here, such as:
 		// 'svelte/button-has-type': 'error'
 		rules: {}
+	},
+	{
+		ignores: [
+			'build/',
+			'.svelte-kit/',
+			'dist/',
+			'node_modules/',
+			'static/',
+			'.wangler/',
+			'.cloudflare/',
+			'worker-configuration.d.ts'
+		]
 	}
 )
