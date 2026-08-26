@@ -33,7 +33,7 @@ The core application has been extended with:
 - [Feeder web application](https://smc.org.uk/climbs/submission) for collecting new route details direct from climbers
 - [TopoEditor](https://topoeditor.com) software for creating interactive topos suitable for print, web and mobile
 - [Public web application](https://smc.org.uk/climbs/newroutes) for disseminating new route information
-- Transfer process to <span style="background-color: black; padding: 4px 4px 0px 4px; border-radius: 4px; display: inline-block;">[![27crags logo b](27crags.png)](https://27crags.com/)</span> mobile app.
+- Transfer process to <span style="background-color: black; padding: 4px 4px 0px 4px; border-radius: 4px; display: inline-block;">[![27crags logo b](thetopo.png)](https://thetopo.com/)</span> mobile app.
 - Archive facility with catalogue and digital storage for club climbing related archives
 - Bolt management facility (in development) aimed at Bolt funds
 

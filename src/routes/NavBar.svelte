@@ -1,8 +1,8 @@
 <script lang="ts">
-	let navbarOpen = $state(false)
+	let navbarOpen = $state(false);
 	const toggleNavbarOpen = () => {
-		navbarOpen = !navbarOpen
-	}
+		navbarOpen = !navbarOpen;
+	};
 </script>
 
 {#snippet links()}

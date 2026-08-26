@@ -13,4 +13,4 @@ export const entries = () => [
 	{ slug: 'learnsvelte' },
 	{ slug: 'bespoke' },
 	{ slug: 'development' }
-]
+];
