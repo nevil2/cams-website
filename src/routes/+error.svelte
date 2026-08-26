@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/state';
+	import { page } from '$app/state'
 </script>
 
 <div class="px-4 py-16 text-center sm:px-8">

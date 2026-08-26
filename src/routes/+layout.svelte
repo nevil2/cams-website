@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
-	import '../app.css';
-	import Navbar from './NavBar.svelte';
+	import type { Snippet } from 'svelte'
+	import '../app.css'
+	import Navbar from './NavBar.svelte'
 
-	let { children }: { children: Snippet } = $props();
+	let { children }: { children: Snippet } = $props()
 </script>
 
 <svelte:head>
